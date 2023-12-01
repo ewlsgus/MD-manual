@@ -19,7 +19,6 @@ srun --ntasks=1 --cpus-per-task=8 --mem=8G --time=8:00:00 --partition=gpu --gres
 
 If you indeed do have access, you should either be assigned a node immediately or be queued for the use.
 
-```
-Original work by Jinhyun Lee
-Updated by Jinhyun Lee on 2023-12-01
-```
+`Original work by Jinhyun Lee`
+
+`Updated by Jinhyun Lee on 2023-12-01`
