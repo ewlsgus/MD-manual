@@ -32,7 +32,7 @@ class print_sim_state(hoomd.custom.Action):
         global init_time, last_output
         try:
             sec_remaining = int((self._state._simulation.final_timestep - timestep) / self._state._simulation.tps)
-        except ZeroDivisionError:
+        except ZeroDivis/main_tutorial/ionError:
             sec_remaining = 0
         print(
             "Time", str(datetime.timedelta(seconds=int(time.time() - init_time))),
@@ -83,7 +83,7 @@ with gsd.hoomd.open(name='IC.gsd', mode='w') as f:  # save the initial state as 
 ```
 
 The image rendering of the initial snapshot is shown below.
-![square box initial condition](IC1.png)
+![square box initial condition](vis/main_tutorial/IC1.png)
 
 ### set up simulation object
 ```python
@@ -118,6 +118,7 @@ sim.operations.integrator = hoomd.md.Integrator(     # define integrator
 gsd_writer = hoomd.write.GSD(                        # specify the simulation output
     trigger = hoomd.trigger.Periodic(int(1e4)),      # log quantities every 1e4 time steps
     filename = "simulation1.gsd",                    # output file name
+    mode = 'wb',                                     # writing mode. overwrite if exist
     filter = hoomd.filter.All(),                     # log quantities for all particles
     dynamic=['property', 'momentum', 'attribute']
 )
@@ -141,7 +142,7 @@ sim.run(1_000_000)                                   # run simulation for 5e6 nu
 gsd_writer.flush()
 ```
 The image rendering of the simulation is shown below.
-![square box simulation](sim1.gif)
+![square box simulation](vis/main_tutorial/sim1.gif)
 
 ### Second simulation
 
@@ -167,6 +168,8 @@ s.particles.types = ["A", "W"]
 with gsd.hoomd.open(name='IC2.gsd', mode='w') as f:
     f.append(s)
 ```
+The image rendering of the initial snapshot is shown below.
+![rectangular box initial condition](vis/main_tutorial/IC2.png)
 
 ### run longer simulation
 ```python
@@ -203,6 +206,7 @@ sim.operations.writers.append(
 gsd_writer = hoomd.write.GSD(
     trigger = hoomd.trigger.Periodic(int(1e4)),
     filename = "simulation2.gsd",
+    mode = 'wb',
     filter = hoomd.filter.All(),
     dynamic=['property', 'momentum', 'attribute']
 )
@@ -214,4 +218,4 @@ sim.run(10_000_000)
 gsd_writer.flush()
 ```
 The image rendering of the simulation is shown below.
-![rectangular box simulation](sim2.gif)
+![rectangular box simulation](vis/main_tutorial/sim2.gif)
