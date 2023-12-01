@@ -10,6 +10,7 @@ To get started with processing/visualizing your simulation data, go to [Post-pro
 
 Some other helpful resources are listed below:
 - [Longleaf Cluster Access](misc_guides/setting_up_supercomputer_account.md)
+- [Using WSL with VS Code on Windows](misc_guides/setting_up_Windows_with_VSCode.md)
 
 Original work by Jinhyun Lee
 Updated by Jinhyun Lee on 2023-12-01
