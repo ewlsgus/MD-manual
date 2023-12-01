@@ -11,6 +11,7 @@ To get started with processing/visualizing your simulation data, go to [Post-pro
 Some other helpful resources are listed below:
 - [Longleaf Cluster Access](misc_guides/setting_up_supercomputer_account.md)
 - [Using WSL with VS Code on Windows](misc_guides/setting_up_Windows_with_VSCode.md)
+- [Using Longleaf Cluster](misc_guides/using_longleaf.md)
 
 
 `Original work by Jinhyun Lee`

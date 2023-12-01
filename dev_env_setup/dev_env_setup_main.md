@@ -2,15 +2,16 @@ This document is to guide researchers of the Klotsa Group on how to set up a res
 
 # System Setup Guides
 
-- [1. Introduction](#1-introduction)
-- [2. Setting up the environment](#2-setting-up-the-environment)
-  - [2-1. Macintosh](#2-1-macintosh)
-  - [2-2. Windows](#2-2-windows)
-  - [2-3. Longleaf Cluster](#2-3-longleaf-cluster)
-- [3. Setting up Miniconda](#3-setting-up-miniconda)
-- [4. Installing prerequisite/post-processing softwares](#4-installing-prerequisitepost-processing-softwares)
-- [5. Building HOOMD-blue from source](#5-building-hoomd-blue-from-source)
-- [6. Troubleshooting](#6-troubleshooting)
+- [System Setup Guides](#system-setup-guides)
+  - [1. Introduction](#1-introduction)
+  - [2. Setting up the environment](#2-setting-up-the-environment)
+    - [2-1. Macintosh](#2-1-macintosh)
+    - [2-2. Windows](#2-2-windows)
+    - [2-3. Longleaf Cluster](#2-3-longleaf-cluster)
+  - [3. Setting up Miniconda](#3-setting-up-miniconda)
+  - [4. Installing prerequisite/post-processing softwares](#4-installing-prerequisitepost-processing-softwares)
+  - [5. Building HOOMD-blue from source](#5-building-hoomd-blue-from-source)
+  - [6. Troubleshooting](#6-troubleshooting)
 
 ## 1. Introduction
 
@@ -57,7 +58,7 @@ On Windows, I highly recommend using the Windows Terminal ([https://github.com/m
 
 ### 2-3. Longleaf Cluster
 
-To set up the environment on Longleaf Cluster ([https://help.rc.unc.edu/longleaf-cluster/](https://help.rc.unc.edu/longleaf-cluster/)), I highly suggest you to check out [this](../misc_guides/setting_up_supercomputer_account.md) document before proceeding with this guide further to set up your Longleaf account.
+Before setting up the environment on Longleaf Cluster ([https://help.rc.unc.edu/longleaf-cluster/](https://help.rc.unc.edu/longleaf-cluster/)), you need to have access to the Longleaf cluster. Refer to [this](../misc_guides/setting_up_supercomputer_account.md) document before proceeding with this guide further to set up your Longleaf account.
 
 You just need to load some modules to be used for setting up the environment and GPU usage.
 ```bash
