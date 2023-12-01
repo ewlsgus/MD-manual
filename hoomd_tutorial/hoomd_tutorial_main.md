@@ -219,3 +219,8 @@ gsd_writer.flush()
 ```
 The image rendering of the simulation is shown below.
 ![rectangular box simulation](vis/main_tutorial/sim2.gif)
+
+```
+Original work by Jinhyun Lee
+Updated by Jinhyun Lee on 2023-12-01
+```

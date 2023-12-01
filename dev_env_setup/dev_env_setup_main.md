@@ -145,3 +145,8 @@ Now your HOOMD-blue and the installed post-processing tools are ready to be used
 
 ## 6. Troubleshooting
 TO BE UPDATED
+
+```
+Original work by Jinhyun Lee
+Updated by Jinhyun Lee on 2023-12-01
+```
