@@ -9,10 +9,10 @@ To get started with running HOOMD-blue MD simulations, go to [HOOMD-blue Tutoria
 To get started with processing/visualizing your simulation data, go to [Post-processing Tutorial](post_proc/post_proc_main.md) page.
 
 Some other helpful resources are listed below:
+
 - [Longleaf Cluster Access](misc_guides/setting_up_supercomputer_account.md)
 - [Using WSL with VS Code on Windows](misc_guides/setting_up_Windows_with_VSCode.md)
 - [Using Longleaf Cluster](misc_guides/using_longleaf.md)
-
 
 `Original work by Jinhyun Lee`
 
