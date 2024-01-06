@@ -46,7 +46,7 @@ Git will be installed with the following commands.
 brew install git
 ```
 
-Note that macOS's default shell has changed to zsh from bash. There should not be much significant differences but if you do prefer to use bash, install bash via homebrew `brew install bash` and then changing the default shell with `chsh -s /usr/local/bin/bash`.
+Note that macOS's default shell has changed to zsh from bash. There should not be much significant differences but if you do prefer bash, install bash via homebrew `brew install bash` and then changing the default shell with `chsh -s /usr/local/bin/bash` should do the job.
 
 Your system is now set up to install Miniconda and proceed with the installation of HOOMD-blue.
 
@@ -56,7 +56,7 @@ Unfortunately, Windows is not the optimal system to set up HOOMD-blue molecular 
 
 Follow the guide from Microsoft (<https://learn.microsoft.com/en-us/windows/wsl/install>).
 
-On Windows, I highly recommend using the Windows Terminal (<https://github.com/microsoft/terminal>) and VS Code (<https://code.visualstudio.com/>) as they work well with WSL out of the box. If you choose to use VSCodium (<https://vscodium.com/>) instead of VS Code, you may have some problems connecting to WSL easily.
+On Windows, I highly recommend using the Windows Terminal (<https://github.com/microsoft/terminal>) and VS Code (<https://code.visualstudio.com/>) as they work well with WSL out of the box. If you choose to use VSCodium (<https://vscodium.com/>) instead of VS Code, you may have some problems connecting to WSL easily. While there are workarounds for this, this documentation will not provide you with any assistance doing so.
 
 ### 2-3. Longleaf Cluster
 

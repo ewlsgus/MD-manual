@@ -9,13 +9,14 @@ The basic code structure of a HOOMD-blue simulation is shown in the diagram belo
 
 In the next section, an example simulation script and the results will be shown.
 
-# Example Simulation
+## Example Simulation
 
 For the sake of simplicity, we will be running a simulation of 2D system of 100 particles in Brownian motion in a square box. Then, we will expand on this to a system with a rectangular box with a wall in the middle with a small opening on the wall.
 
 ## Simulation script setup
 
 ### import necessary python packages
+
 ```python
 ##### import python packages
 import hoomd
@@ -25,6 +26,7 @@ import datetime, time
 ```
 
 ### helper functions that will display simulation progress
+
 ```python
 ##### helper functions to display simulation status
 class print_sim_state(hoomd.custom.Action):
@@ -52,6 +54,7 @@ class trigger_every_n_sec(hoomd.trigger.Trigger):
 ```
 
 ### system parameters and environmental variables
+
 ```python
 ##### System variable definitions #####
 sigma = 1     # sigma is diameter of particles
@@ -62,6 +65,7 @@ N = 100       # N is number of particles
 ```
 
 ### setting initial particle positions
+
 ```python
 ##### Setting initial particle positions #####
 particlePositions = []     # Initializing an empty array to store particle positions
@@ -71,6 +75,7 @@ for i in range(10):        # Initialize square packing of 100 particles [10X10]
 ```
 
 ### set up initial snapshot of the simulation
+
 ```python
 s = gsd.hoomd.Frame()                               # define initial frame
 s.particles.N = N                                   # define number of particles
@@ -86,6 +91,7 @@ The image rendering of the initial snapshot is shown below.
 ![square box initial condition](vis/main_tutorial/IC1.png)
 
 ### set up simulation object
+
 ```python
 ##### Setting up HOOMD simulation object
 sim = hoomd.Simulation(                              # define simulation object and specify device and seed
@@ -133,7 +139,9 @@ sim.operations.writers.append(
     )
 )
 ```
+
 ### run the simulation
+
 ```python
 ##### Run simulation #####
 init_time = time.time()                              # for helper function
@@ -141,6 +149,7 @@ last_output = init_time                              # for helper function
 sim.run(1_000_000)                                   # run simulation for 5e6 number of time steps. since dt is 1e-6, the whole simulation will run for 5 unit time.
 gsd_writer.flush()
 ```
+
 The image rendering of the simulation is shown below.
 ![square box simulation](vis/main_tutorial/sim1.gif)
 
@@ -168,10 +177,12 @@ s.particles.types = ["A", "W"]
 with gsd.hoomd.open(name='IC2.gsd', mode='w') as f:
     f.append(s)
 ```
+
 The image rendering of the initial snapshot is shown below.
 ![rectangular box initial condition](vis/main_tutorial/IC2.png)
 
 ### run longer simulation
+
 ```python
 ##### Setting up HOOMD simulation object (same setup so only commenting on changes) #####
 sim = hoomd.Simulation(device=hoomd.device.auto_select(), seed=1)
@@ -217,6 +228,7 @@ last_output = init_time
 sim.run(10_000_000)
 gsd_writer.flush()
 ```
+
 The image rendering of the simulation is shown below.
 ![rectangular box simulation](vis/main_tutorial/sim2.gif)
 
