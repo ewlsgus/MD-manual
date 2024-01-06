@@ -13,7 +13,7 @@ Once your longleaf account is set up, you can ssh into the cluster on a terminal
 ssh your_onyen@longleaf.unc.edu
 ```
 
-If you are on campus network, it should connect right away and prompt you for your onyen password. If you are not, you should connect to the campus VPN first. For VPN setup, refer to [https://portal.ed.unc.edu/resources/connecting-to-vpn-for-off-campus-access-to-network-resources/#4-setting-up-a-vpn-connection](https://portal.ed.unc.edu/resources/connecting-to-vpn-for-off-campus-access-to-network-resources/#4-setting-up-a-vpn-connection). Once you have the VPN connection, ssh should work fine.
+If you are on campus network, it should connect right away and prompt you for your onyen password. If you are not, you should connect to the campus VPN first. For VPN setup, refer to [https://portal.ed.unc.edu/resources/connecting-to-vpn-for-off-campus-access-to-network-resources](https://portal.ed.unc.edu/resources/connecting-to-vpn-for-off-campus-access-to-network-resources). Once you have the VPN connection, ssh should work fine.
 
 In order to gain access to the GPU nodes, you need to send an email to [research@unc.edu](mailto:research@unc.edu?subject=GPU%Access/QoS%on%Longleaf%Cluster) with the subject line "GPU Access/QoS on Longleaf Cluster." Copy Dr. Daphne Klotsa on the email and explain to ITS that you need access to the GPU nodes in order to do your research. Once they respond and confirm that you have access to the GPU node, test it by requesting a node on the Cluster using
 
