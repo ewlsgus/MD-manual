@@ -6,4 +6,4 @@ Once you've downloaded and installed VS Code, type `code` in your working direct
 
 `Original work by Jinhyun Lee`
 
-`Updated by Jinhyun Lee on 2023-12-01`
+`Updated by Jinhyun Lee on 2024-01-06`
