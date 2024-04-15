@@ -5,7 +5,7 @@ From the documentation,
 
 The basic code structure of a HOOMD-blue simulation is shown in the diagram below.
 ![HOOMD-blue API Diagram](vis/main_tutorial/api_diagram.png)
->Original works by Grant Fourie [https://github.com/grantfourie/CrowdDynamics](https://github.com/grantfourie/CrowdDynamics)
+>Original diagram by Grant Fourie, reworked by Jinhyun Lee [https://github.com/grantfourie/CrowdDynamics](https://github.com/grantfourie/CrowdDynamics)
 
 In the next section, an example simulation script and the results will be shown.
 
