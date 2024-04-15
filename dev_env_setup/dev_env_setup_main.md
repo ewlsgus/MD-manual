@@ -114,7 +114,7 @@ conda activate hoomd
 Then, the prerequisite software packages can be installed with the following.
 
 ```bash
-mamba install -y --strict-channel-priority -c https://conda.ovito.org -c conda-forge c-compiler cxx-compiler git make cmake pybind11 eigen tbb tbb-devel python numpy matplotlib ovito freud gsd xvfbwrapper
+conda install -y --strict-channel-priority -c https://conda.ovito.org -c conda-forge c-compiler cxx-compiler git make cmake pybind11 eigen tbb tbb-devel python numpy matplotlib ovito freud gsd xvfbwrapper
 ```
 
 Now the prerequisite and some post processing softwares are installed and the environment is ready to compile HOOMD-blue.
