@@ -4,7 +4,7 @@ From the documentation,
 >HOOMD-blue is a Python package that runs simulations of particle systems on CPUs and GPUs. It performs hard particle Monte Carlo simulations of a variety of shape classes and molecular dynamics simulations of particles with a range of pair, bond, angle, and other potentials. Many features are targeted at the soft matter research community, though the code is general and capable of many types of particle simulations.
 
 The basic code structure of a HOOMD-blue simulation is shown in the diagram below.
-![HOOMD-blue API Diagram](api_diagram.png)
+![HOOMD-blue API Diagram](vis/api_diagram.png)
 >Original works by Grant Fourie [https://github.com/grantfourie/CrowdDynamics](https://github.com/grantfourie/CrowdDynamics)
 
 In the next section, an example simulation script and the results will be shown.
@@ -155,7 +155,7 @@ The image rendering of the simulation is shown below.
 
 ### Second simulation
 
-We will just modify the initial setup to get the initial snapshot of the second simulation with a rectangular box and a wall in the middle.
+We will just modify the initial setup to get the initial snapshot of the second simulation with a rectangular box and a wall with a small opening in the middle.
 
 ```python
 ##### Setting up initial state #####
